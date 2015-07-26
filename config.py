@@ -15,11 +15,9 @@ class Config(object):
     TW_CLIENT = twilio.rest.TwilioRestClient(
         os.environ.get('TWILIO_DEV_ACCOUNT_SID'),
         os.environ.get('TWILIO_DEV_AUTH_TOKEN'))
-    TW_NUMBER = '5005550006'  # development number
 
     TASKFORCE_KEY = os.environ.get('TASKFORCE_KEY')
     SUNLIGHTLABS_KEY = os.environ.get('SUNLIGHTLABS_KEY')
-    print SUNLIGHTLABS_KEY 
     # limit on the length of the call
     TW_TIME_LIMIT = 60 * 20  # 4 minutes
 
@@ -42,7 +40,6 @@ class ConfigProduction(Config):
     TW_CLIENT = twilio.rest.TwilioRestClient(
         os.environ.get('TWILIO_ACCOUNT_SID'),
         os.environ.get('TWILIO_AUTH_TOKEN'))
-    TW_NUMBER = os.environ.get('TWILIO_NUMBER')
 
     SECRET_KEY = os.environ.get('SECRET_KEY')
 

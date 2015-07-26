@@ -71,7 +71,6 @@ The app uses environment variables to store account keys. For development you wi
 * SUNLIGHTLABS_KEY
 * TWILIO_DEV_ACCOUNT_SID
 * TWILIO_DEV_AUTH_TOKEN
-* TW_NUMBER
 
 and for production:
 
@@ -79,7 +78,6 @@ and for production:
 * TWILIO_ACCOUNT_SID
 * TWILIO_AUTH_TOKEN
 * APPLICATION_ROOT (url for application server)
-* TASKFORCE_KEY (used for querying statistics)
 
 Development mode
 -------------------
